@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>Front Matter add multiple tag</title>
+      <link href="/2020/06/23/Front-Matter-add-multiple-tag/"/>
+      <url>/2020/06/23/Front-Matter-add-multiple-tag/</url>
+      
+        <content type="html"><![CDATA[<p><strong>如何为当前文章设置多个tag？</strong></p><p>在tag标签后按照下面样子写就可以了</p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">tags:</span> <span class="string">[标签1,</span> <span class="string">标签2,</span> <span class="string">标签3]</span></span><br></pre></td></tr></table></figure><p>实际使用的效果如下：</p><p><img src="multiple_tags.jpg" alt=""></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> tags </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>second_try</title>
+      <link href="/2020/06/23/second-try/"/>
+      <url>/2020/06/23/second-try/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>first_try</title>
+      <link href="/2020/06/23/first-try/"/>
+      <url>/2020/06/23/first-try/</url>
+      
+        <content type="html"><![CDATA[<h2 id="mail-team-python-base-image-Project"><a href="#mail-team-python-base-image-Project" class="headerlink" title="mail team python base image Project"></a>mail team python base image Project</h2><p>该项目关联nobody公司domeos并用来构建邮件组python基础镜像</p><h3 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h3><ul><li>安装rsyslog兼容以前日志收集</li><li>安装haproxy</li><li>python2版本<strong>2.7.5</strong></li><li>python3版本<strong>3.6.7</strong></li><li>supervisor安装在python2版本之下</li></ul><h3 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h3><ul><li><strong>python2</strong>版本命令为<strong>python</strong> 和 <strong>pip</strong></li><li><strong>python3</strong>版本命令为<strong>python3</strong> 和 <strong>pip3</strong></li><li>pypi源使用公司大数据中心维护私有源，地址为 <a href="http://pypi.org/pypi/web/simple" target="_blank" rel="noopener">http://pypi.org/pypi/web/simple</a>; 如果修改系统pypi源配置，见项目根目录下pip.conf，可放置于镜像的~/.pip/pip.conf目录下</li></ul><h2 id="增加logstash基础镜像"><a href="#增加logstash基础镜像" class="headerlink" title="增加logstash基础镜像"></a>增加logstash基础镜像</h2><p>由于大数据中提供的ELK资源暂时没有提供logstash服务器，我们暂时把logstash服务放到我们这里来。</p><h3 id="说明-1"><a href="#说明-1" class="headerlink" title="说明"></a>说明</h3><ul><li>logstash在项目里启动时不用指定配置文件，使用默认的pipelines.yml配置文件</li><li>要新增项目的文件以logstash_***.conf命名,***为项目名,然后将该文件以新pipeline的方式include到piplelines.yml里</li></ul>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> docker </tag>
+            
+            <tag> image </tag>
+            
+            <tag> logstash </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hello World</title>
+      <link href="/2020/06/23/hello-world/"/>
+      <url>/2020/06/23/hello-world/</url>
+      
+        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+  
+  
+</search>
